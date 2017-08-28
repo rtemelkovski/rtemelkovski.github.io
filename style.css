@@ -36,6 +36,7 @@ h4 a{
   background-color:transparent;
   height:14em;
   color:white;
+  width:100%;
 }
 
 #header #menu-bar{
@@ -73,31 +74,24 @@ h4 a{
   height:inherit;
 }
 
-#menu{
-  position:absolute;
-  bottom:0;
-  left:43%;
+.menu {
+  text-align: center;
+  margin-top:2em;
 }
 
-#menu{
-  position:absolute;
-  bottom:0;
-  left:43%;
+#contact-page-menu{
+  margin-top:4.5em;
 }
 
-.contact-page-menu{
-  left:47%;
-}
-
-#menu a{
+.menu a{
   color: #566b78;
 }
 
-#menu a:hover{
+.menu a:hover{
   color: #e81c4f;
 }
 
-#menu a:active{
+.menu a:active{
   color: #e81c4f;
 }
 
@@ -121,25 +115,23 @@ h4 a{
   width: 90%;
 }
 
-#body #project-view{
-  margin:0 auto;
-  display:inline-flex;
-  align-items: center;
-  padding-left:2em;
+#body #project-body{
+  text-align: center;
 }
 
-#body #project-view .project{
+#body #project-view{
   display:inline-block;
-  height: 11em;
-  width: 30%;
-  text-align: center;
-  margin-right:1em;
+}
+
+#body #project-view .project{ 
+  width:12em;
+  margin-bottom: 1em;
+  display:inline-grid;
 }
 
 #body #project-view .project img{
   max-width: 10em;
-  max-height: 140px;
-  margin-bottom:15px;
+  max-height: 10em;
 }
 
 #body #project-view .project h4{
@@ -147,12 +139,12 @@ h4 a{
 }
 
 #body #project-view .project p{
-  margin: 0px 0px;
+  height: 2em;
 }
 
 #body #contact-menu{
   padding-left: 1.5em;
-  font-size:22px;
+  font-size:21px;
 }
 
 #body #contact-menu div{
