@@ -129,8 +129,12 @@ h4 a{
 
 #body #project-view .project{ 
   width:12em;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
   display:inline-grid;
+}
+
+#body #project-view .project:nth-child(2){ 
+  margin-bottom:0;
 }
 
 #body #project-view .project img{
