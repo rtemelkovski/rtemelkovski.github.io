@@ -2,6 +2,7 @@ var descriptions = [
 	"Computer Science Student",
 	"Software Developer",
 	"Open Source Enthusiast",
+	"Amateur Musician and Songwriter",
 	"Caffeine Lover"
 ]
 
