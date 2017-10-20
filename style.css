@@ -9,7 +9,7 @@ body {
 
 p {
   margin: 0px;
-  font-size:0.65em;
+  font-size:0.7em;
 }
 
 h1,
@@ -34,7 +34,7 @@ h4 a{
   background-repeat:no-repeat;
   background-size:cover;
   background-color:transparent;
-  height:10em;
+  height:12em;
   color:white;
   width:100%;
 }
