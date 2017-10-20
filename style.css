@@ -9,7 +9,7 @@ body {
 
 p {
   margin: 0px;
-  font-size:16px;
+  font-size:17px;
 }
 
 h1,
@@ -41,7 +41,7 @@ h4 a{
 
 #header #menu-bar{
   width:100%;
-  height:15%;
+  height:10%;
 }
 
 #header #menu-bar .button-group{
@@ -75,16 +75,13 @@ h4 a{
 }
 
 .menu {
+  height:3em;
   text-align: center;
-  margin-top:2em;
 }
 
-#contact-page-menu{
-  margin-top:4.5em;
-}
-
-#index-menu{
-  margin-top:5.5em;
+.menu-box{
+  position:relative;
+  top:100%;
 }
 
 .menu a{
@@ -99,9 +96,17 @@ h4 a{
   color: #e81c4f;
 }
 
+#page-content{
+  position:absolute;
+  bottom:0;
+  top:0;
+}
+
 #body{
   margin: 0 auto;
-  display: inline;
+  display: inline-block;
+  height:55%;
+  width:100%;
 }
 
 #body h2{
@@ -139,7 +144,7 @@ h4 a{
 
 #body #project-view .project img{
   max-width: 10em;
-  max-height: 10em;
+  max-height: 5em;
 }
 
 #body #project-view .project h4{
