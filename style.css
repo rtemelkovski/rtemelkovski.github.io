@@ -9,7 +9,7 @@ body {
 
 p {
   margin: 0px;
-  font-size:0.7em;
+  font-size:0.55em;
 }
 
 h1,
@@ -75,13 +75,11 @@ h4 a{
 }
 
 .menu {
-  height:18%;
   text-align: center;
-}
-
-.menu-box{
   position:relative;
-  top:100%;
+  bottom:0;
+  left: 0;
+  width: 100%;
 }
 
 .menu a{
@@ -106,7 +104,6 @@ h4 a{
 #body{
   margin: 0 auto;
   display: inline-block;
-  height:55%;
   width:100%;
 }
 
@@ -121,6 +118,7 @@ h4 a{
 }
 
 #body .body-container{
+  min-height:14em;
   margin:0 auto;
   width: 90%;
 }
@@ -129,14 +127,13 @@ h4 a{
   text-align: center;
 }
 
-#body #project-view{
-  display:inline-block;
-}
-
 #body #project-view .project{ 
+  vertical-align: top;
+  display:inline-block !important;
   width:12em;
+  height: 10em;
   margin-bottom: 1.5em;
-  display:inline-grid;
+  display:grid;
 }
 
 #body #project-view .project:nth-child(2){ 
@@ -144,8 +141,8 @@ h4 a{
 }
 
 #body #project-view .project img{
-  max-width: 10em;
-  max-height: 5em;
+  width: 8em;
+  height: 5em;
 }
 
 #body #project-view .project h4{
