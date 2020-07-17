@@ -1,5 +1,5 @@
 var descriptions = [
-	"Computer Science Student",
+	"Computer Science Graduate",
 	"Software Developer",
 	"Open Source Enthusiast",
 	"Musician and Songwriter",

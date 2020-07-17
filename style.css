@@ -4,7 +4,8 @@ body {
   margin: 0px 0px;
   line-height: 1.5;
   color: #566b78;
-  height:100%;
+  min-height: 100vh;
+  position: relative;
 }
 
 p {
@@ -17,6 +18,7 @@ h2,
 h4,
 strong {
   color: #333;
+  letter-spacing: 0.5px;
 }
 
 a {
@@ -75,15 +77,20 @@ h4 a{
 }
 
 .menu {
-  text-align: center;
-  position:relative;
-  bottom:0;
+  position:absolute;
+  bottom:10px;
   left: 0;
-  width: 100%;
+  right: 0;
+}
+
+.menu-box {
+  display: flex;
+  justify-content: center;
 }
 
 .menu a{
   color: #566b78;
+  margin: 0rem 0.5rem;
 }
 
 .menu a:hover{
@@ -94,15 +101,9 @@ h4 a{
   color: #e81c4f;
 }
 
-#page-content{
-  position:absolute;
-  bottom:0;
-  top:0;
-  width:100%;
-}
-
 #body{
   margin: 0 auto;
+  margin-bottom: calc(1.83em + 10px);
   display: inline-block;
   width:100%;
 }
