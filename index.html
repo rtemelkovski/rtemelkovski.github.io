@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="titlescript.js" type="text/javascript"></script>
+	<script src="animations.js" type="text/javascript"></script>
 </head>
 <body>
 	<div id='header'>
@@ -18,23 +18,122 @@
 			<p id="alterable-subtitle"></p>
 		</div>
 	</div>
-	<div id="body">
+	<div class="body">
+		<div class="body-container space-between-row">
+			<div id="about-image">
+				<img src="headshot.jpg" alt="Picture of Me">
+			</div>
+
+			<div id="about-content">
+				<h2>About Me</h2>
+				<div class="line-separator"></div>
+				<p>
+				I am Computer Science Graduate from McMaster University living in Hamilton, Ontario, Canada. I am currently working as a Associate Software Developer at <a href="https://www.konrad.com/">Konrad Group</a>.
+				In my spare time, I enjoy writing and producing music, playing basketball, traveling, programming and exploring the city I'm living in.
+				</p>
+				<p>
+				During my time in University, I've worked in both front-end and back-end development roles and have found myself enjoying both. Due to these experiences, I consider myself to be a generalist who can adapt to being in any technical roles. For my current role, there has been more of a focus on front-end but I've still been able to gain varied experience. You can read more about my work experience <a href="#experience">here</a>.
+				</p>
+				<p>
+				For my personal projects I like to try using many different languages, however the languages I've used the most in my own personal projects are Python, C++, Javascript and Java. You can check out a few of my projects <a href="#project">here</a> or go to <a href="https://github.com/rtemelkovski">Github</a> for a more detailed view of all of them.
+				</p>
+				<p style="margin-top:2em;">
+				To contact me, send an email to <a href="mailto:temelkr17@gmail.com">temelkr17@gmail.com</a>.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="experience" class="body body-inverse">
 		<div class="body-container">
-			<h2>About Me</h2>
+			<h2>My Work Experience</h2>
 			<div class="line-separator"></div>
-			<p>
-			I am Computer Science Graduate from McMaster University living in Hamilton, Ontario, Canada. I am currently working as a Associate Software Developer at <a href="https://www.konrad.com/">Konrad Group</a>.
-			In my spare time, I enjoy writing and producing music, playing basketball, traveling, programming and exploring the city I'm living in with friends.
-			</p>
-			<p>
-			During my time in University, I've worked in both front-end and back-end development roles and have found myself enjoying both. Due to these experiences, I consider myself to be a generalist who can adapt to being in any technical roles. For my current role, there has been more of a focus on front-end but I've still been able to gain varied experience. You can read more about my work experience <a href="experience.html">here</a>.
-			</p>
-			<p>
-			For my personal projects I like to try using many different languages, however the languages I've used the most in my own personal projects are Python, C++, Javascript and Java. You can check out a few of my projects <a href="projects.html">here</a> or go to <a href="https://github.com/rtemelkovski">Github</a> for a more detailed view of all of them.
-			</p>
-			<p style="margin-top:2em;">
-			To contact me, send an email to <a href="mailto:temelkr17@gmail.com">temelkr17@gmail.com</a>
-			</p>
+			<div id="work-experience">
+				<div id="konrad-group-block" class="content-block">
+					<a class="left-image" href="https://www.konrad.com/"><img src="kg.png" alt="Konrad Group Logo"></a>
+					<div class="content-block-body">
+						<a href="https://www.konrad.com/"><h3>Konrad Group</h3></a>
+						<h6>Software Developer</h6>
+						<p>Worked with a client to design and implement a custom e-commerce web application that integrates with a wide array of financial and logistical services. Impressed first time client with punctual delivery on tight deadlines leading to contract extensions and future projects.</p>
+					</div>
+				</div>
+
+				<div id="telus-block" class="content-block" style="flex-direction: row-reverse;">
+					<a class="right-image" href="https://www.telus.com/en/">
+						<img src="telus.png" alt="Telus Logo" id="telus-logo"/>
+					</a>
+					<div class="content-block-body">
+						<a href="https://www.telus.com/en/"><h3>Telus</h3></a>
+						<h6>Software Engineering Intern</h6>
+						<p>Contributed to the implementation of an API for querying data from multiple data sources (databases and Hadoop data store) into multiple systems developed by other teams. This application allowed other teams to all have a central method of querying data as opposed to multiple teams directly querying data sources, thus reducing the number of related issues for the support team.</p>
+					</div>
+				</div>
+
+				<div id="munvo-block" class="content-block">
+					<a class="left-image" href="https://munvo.com/"><img src="munvo.png" alt="Munvo Logo"></a>
+					<div class="content-block-body">
+						<a href="https://munvo.com/"><h3>Munvo</h3></a>
+						<h6>Software Developer Intern</h6>
+						<p>Developed a real-time streaming application for IBM Campaign runtime data using Apache KAFKA. Allowed for offsite data analysis, which lessens the load on the client's production environment, freeing up more resources for day-to-day marketing operations. Implemented other services (IE reporting) that were previously on-site as remote microservices, which drastically reduced deployment time for client's with longer timelines for adopting new software</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="project" class="body">
+				<div class="body-container">
+			<h2>My Projects</h2>
+			<div class="line-separator"></div>
+			<div id="project-history">
+				<div class="content-block">
+					<img 
+						class="project-image"
+						id="mobility-ai-logo"
+						src="mobility-ai.png" 
+						alt="Mobility AI Logo"
+					>
+					<div class="content-block-body centered-text">
+						<h3 class="content-block-title">
+							<a href="https://github.com/pgunasekara/mobilityai">
+								Mobility AI
+							</a>
+						</h3>
+						<p>Capstone project built for Juravinski Hospital to help nurses track their patients' mobility</p>
+					</div>
+				</div>
+
+				<div class="content-block">
+					<img 
+						class="project-image"
+						src="glifrp.png" 
+						alt="Good Life Index "
+					>
+					<div class="content-block-body centered-text">
+						<h3 class="content-block-title">
+							<a href="https://github.com/teovoinea/GLIFRP">
+								Good Life Index Project
+							</a>
+						</h3>
+						<p>Geo webapp to find the best places to live</p>
+					</div>
+				</div>
+
+				<div class="content-block">
+					<img 
+						class="project-image"
+						src="mazegame.png" 
+						alt=""
+					>
+					<div class="content-block-body centered-text">
+						<h3 class="content-block-title">
+							<a href="https://github.com/pgunasekara/mobilityai">
+								Vanish
+							</a>
+						</h3>
+						<p>A maze exploration game built with OpenGL and C++ for our Computer Graphics class</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="menu">

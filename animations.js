@@ -19,4 +19,14 @@ window.onload = function() {
 	var title = document.getElementById("alterable-subtitle")
 	title.innerHTML = descriptions[0]
 	loadNext(1);
+
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+	    anchor.addEventListener('click', function (e) {
+	        e.preventDefault();
+
+	        document.querySelector(this.getAttribute('href')).scrollIntoView({
+	            behavior: 'smooth'
+	        });
+	    });
+	});
 };
