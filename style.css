@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  font-size:26px;
+  font-size: 18px;
   margin: 0px 0px;
   line-height: 1.5;
   color: #566b78;
@@ -8,9 +8,13 @@ body {
   position: relative;
 }
 
+h6 {
+  font-size: 15px;
+}
+
 p {
   margin: 0px;
-  font-size:0.55em;
+  font-size: 14px;
 }
 
 h1,
@@ -31,154 +35,18 @@ h4 a{
   text-decoration: none;
 }
 
-.space-between-row {
-  display: flex;
-  justify-content: space-between;
+.mobile-only {
+  display: block;
 }
 
-#header{
-  text-align: center;
-  background-image: url(scenicbg.jpg);
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-color:transparent;
-  height:40vh;
-  color:white;
-  width:100%;
+.hide-mobile {
+  display: none;
 }
 
-#header #menu-bar{
-  width:100%;
-  height:10%;
-}
-
-#header #menu-bar .button-group{
-  text-align: center;
-}
-
-#header #menu-bar a{
-  color:white;
-}
-
-#header #menu-bar i{
-  color:white;
-}
-
-#header p{
-  font-size: 20px;
-}
-
-#header h2{
-  color:white;
-  padding-top: 10vh;
-  margin-bottom: 0px;
-}
-
-#header-tint{
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  position:absolute;
-  top:0;
-  height:inherit;
-}
-
-.menu {
-  margin-bottom: 10px;
-}
-
-.menu-box {
+.flex-center {
   display: flex;
   justify-content: center;
-}
-
-.menu a{
-  color: #566b78;
-  margin: 0rem 0.5rem;
-}
-
-.menu a:hover{
-  color: #e81c4f;
-}
-
-.menu a:active{
-  color: #e81c4f;
-}
-
-.body{
-  margin: 0 auto;
-  display: inline-block;
-  width:100%;
-  min-height: 60vh;
-}
-
-.body h2{
-  margin-left:2px;
-  margin-bottom:10px;
-  margin-top: 0;
-}
-
-.body p{
-  margin-left:2px;
-  margin:1em 0px;
-}
-
-.body .body-container{
-  margin:0 auto;
-  width: 90%;
-  padding: 1.5em 0;
-}
-
-.body #project-body{
-  text-align: center;
-}
-
-.body #project-view .project{ 
-  vertical-align: top;
-  display:inline-block !important;
-  width:12em;
-  height: 10em;
-  margin-bottom: 1.5em;
-  display:grid;
-}
-
-.body #project-view .project:nth-child(2){ 
-  margin-bottom:0;
-}
-
-.body #project-view .project img{
-  width: 8em;
-  height: 5em;
-}
-
-.body #project-view .project h4{
-  margin: 0px 0px;
-}
-
-.body #project-view .project p{
-  height: 2em;
-}
-
-.body #contact-menu{
-  padding-left: 1.5em;
-  font-size:21px;
-}
-
-.body #contact-menu div{
-  margin-bottom:1.5em;
-}
-
-.body #contact-menu i{
-  color: #566b78;
-}
-
-.body #contact-menu a{
-  margin-left: 20px;
-  text-decoration: none;
-  color: #566b78;
-}
-
-.body #contact-menu a:hover{
-  color: #e81c4f;
+  align-items: center;
 }
 
 .line-separator{
@@ -189,8 +57,24 @@ h4 a{
   width:100%;
 }
 
-#alterable-subtitle {
-  color : #DDD;
+/* Body Styles */
+.body {
+  margin: 0 auto;
+  padding-top: 1.5em;
+}
+
+.body .body-content {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.body h2{
+  margin-bottom: 6px;
+  margin-top: 0;
+}
+
+.body p{
+  margin:1em 0px;
 }
 
 .body-inverse {
@@ -205,13 +89,87 @@ h4 a{
   color: #FFF;
 }
 
-#work-experience, #project-history {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  display:flex;
+
+/* Header Styles */
+#header {
+  text-align: center;
+  background-image: url(assets/scenicbg.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-color:transparent;
+  height:35vh;
+  color:white;
+  width:100%;
 }
 
-#work-experience {
+#header h2{
+  color:white;
+  margin: 0;
+}
+
+#header-tint{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position:absolute;
+  top:0;
+  height:inherit;
+}
+
+#alterable-subtitle {
+  color : #DDD;
+  font-size: 15px; 
+}
+
+/* About Me Styles */
+#about-me {
+  margin-bottom: 2em;
+}
+
+#about-image-desktop {
+  display:none;
+}
+
+#about-image-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-image-mobile img, #about-image-desktop img {
+  border-radius: 50%;
+  height: 10em;
+  width: 10em;
+  margin: 0em;
+  margin-bottom: 0.5em;
+}
+
+
+/* Menu Styles */
+#menu {
+  margin-bottom: 10px;
+}
+
+#menu div {
+  display: flex;
+  justify-content: center;
+}
+
+#menu a{
+  color: #566b78;
+  margin: 0rem 0.5rem;
+}
+
+#menu a:hover{
+  color: #e81c4f;
+}
+
+#menu a:active{
+  color: #e81c4f;
+}
+
+/* Work Experience Styles */
+#work-experience, #project-history {
+  display:flex;
   flex-direction:column;
 }
 
@@ -220,18 +178,9 @@ h4 a{
 }
 
 .content-block {
-  height: 20vh;
-  margin-bottom: 3em;
   display: flex;
-}
-
-#project-history .content-block {
   flex-direction: column;
-  width: 30%;
-}
-
-.content-block a, .content-block img {
-  height: inherit;
+  margin-bottom: 2.5em;
 }
 
 .content-block h3, .content-block h6 {
@@ -242,56 +191,187 @@ h4 a{
   line-height : 1.2;
 }
 
-.content-block .left-image {
-  margin-right: 3em;
-}
-
-.content-block .right-image {
-  margin-left: 1.5em;
-}
-
-.content-block a {
+.company-name a {
   text-decoration: none;
+  color: #FFF;
 }
 
-.content-block .content-block-title a {
-  color: #333;
-}
-
-#about-image {
+.company-logo-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-#about-image img {
-  border-radius: 50%;
-  height: 10em;
-  width: 10em;
-  margin: 1em;
-  margin-left: 0;
-}
-
-.project-image {
+.company-logo {
+  height: 100%;
+  width: min-content;
   margin: 0 auto;
   margin-bottom: 1em;
 }
 
+.company-logo img {
+  height: 15vh;
+}
+
+.company-tenure {
+  float: right;
+  font-weight: lighter;
+  font-size: 12px;
+  padding-top: 3px;
+}
+
+#telus-logo img {
+  height: 15vh;
+}
+
+/* Project Section Styles */
+.project-image {
+  width: 100%;
+  object-fit: cover;
+  max-height : 40vh;
+  height: unset;
+  margin-bottom: 0.5em;
+}
+
 #mobility-ai-logo {
-  height: 7em;
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
 }
 
-.centered-text {
-  text-align: center;
+#project-history .content-block {
+  margin-bottom: 1em;
 }
 
-#telus-logo {
-  height: 10em;
-  margin-top: -2em;
+#project-history .content-block p {
+  margin-top: 0.5em;
 }
 
+#project-history .content-block a {
+  color: #cf1543;
+}
+
+/* Tablet styles */
 @media only screen and (min-width: 600px) {
+  body {
+    font-size: 18px;
+    line-height: 1.5;
+  }
 
+  h6 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .body .body-content {
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  #header {
+    height:40vh;
+  }
+
+  #about-me .body-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #about-image-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    margin-left: 0;
+  }
+
+  #about-image-mobile {
+    display:none;
+  }
+
+  .content-block {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .company-logo-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .company-logo {
+    width: unset;
+    margin-bottom: 0;
+    height: auto;
+    max-height: unset;
+  }
+
+  .company-logo--left {
+    margin: 0 2em 0 1em;
+  }
+  
+  #telus-logo img {
+    height: 10vh;
+  }
+
+  #telus-block {
+    flex-direction: row-reverse;
+  }
+
+  #project-history {
+    flex-direction: row;
+  }
+
+  #project-history .content-block {
+    flex-direction: column;
+    width: 30%;
+  }
+
+  #project-history .content-block-body {
+    text-align: center;
+    padding: 0 1em;
+  }
+
+  .project-image {
+    height: 20vh;
+  }
+
+  #project-history {
+    padding-bottom: 1em;
+  }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  #header {
+    height: 45vh;
+  }
+
+  .project-image {
+    height: 30vh;
+  }
+
+  .company-tenure {
+    font-size: 14px;
+    padding-top: 4px;
+  }
+
+
+  #alterable-subtitle {
+    font-size: 18px;
+  }
 
 }
