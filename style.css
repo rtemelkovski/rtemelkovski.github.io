@@ -369,9 +369,12 @@ h4 a{
     padding-top: 4px;
   }
 
-
   #alterable-subtitle {
     font-size: 18px;
+  }
+
+  #work-experience .content-block-body p {
+    width: 85%;
   }
 
 }
